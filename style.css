@@ -40,7 +40,8 @@ nav a.active::after {
 
 #hero img {
   width: 120px;
-  height: 120px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
   border-radius: 50%;
   margin-bottom: 1rem;
   border: 3px solid #ffffff22;
@@ -64,15 +65,16 @@ nav a.active::after {
 
 .section {
   padding: 3rem 2rem;
-  max-width: 960px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
 .section h1,
 .section h2 {
   text-align: center;
-  margin: 2rem 0 1rem;
+  font-weight: bold;
   font-size: 2rem;
+  margin: 2rem 0 1rem;
 }
 
 h1, h2, h3 {
@@ -81,13 +83,38 @@ h1, h2, h3 {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
+  justify-content: center;
   justify-items: center;
-  margin-top: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-.service-list, .project-list {
+.card {
+  background-color: #1a1a1a;
+  padding: 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.03);
+  max-width: 320px;
+  width: 100%;
+  transition: transform 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-3px);
+}
+.card h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.card p {
+  font-size: 0.85rem;
+  color: #bbb;
+  line-height: 1.4;
+}
+
+.service-list,
+.project-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
@@ -95,14 +122,16 @@ h1, h2, h3 {
   margin-top: 2rem;
 }
 
-.card, .service-card, .project-card {
+.service-card,
+.project-card {
   background-color: #1a1a1a;
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 0 8px rgba(255, 255, 255, 0.05);
 }
 
-.card p, .service-card p, .project-card p {
+.service-card p,
+.project-card p {
   font-size: 0.95rem;
   color: #ccc;
 }
