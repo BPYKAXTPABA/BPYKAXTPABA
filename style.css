@@ -85,7 +85,7 @@ h1, h2, h3 {
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem 2.5rem;
+  gap: 3.5rem 4rem;
   justify-content: center;
   justify-items: center;
   max-width: 1100px;
