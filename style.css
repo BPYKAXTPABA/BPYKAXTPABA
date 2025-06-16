@@ -43,7 +43,6 @@ nav a.active::after {
   height: 120px;
   border-radius: 50%;
   margin-bottom: 1rem;
-  border: 3px solid #ffffff22;
 }
 
 #hero h1 {
@@ -68,10 +67,9 @@ nav a.active::after {
   margin: 0 auto;
 }
 
-.section h1,
-.section h2 {
+.section h1 {
   text-align: center;
-  margin: 2rem 0 1rem;
+  margin-bottom: 2rem;
   font-size: 2rem;
 }
 
@@ -79,15 +77,7 @@ h1, h2, h3 {
   color: #fff;
 }
 
-.cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-  justify-items: center;
-  margin-top: 2rem;
-}
-
-.service-list, .project-list {
+.cards, .service-list, .project-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
@@ -162,15 +152,9 @@ footer {
   color: #777;
 }
 
-@media (max-width: 1024px) {
-  .cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .cards {
-    grid-template-columns: 1fr;
+@media (max-width: 768px) {
+  .card, .service-card, .project-card {
+    width: 100%;
   }
 
   nav {
