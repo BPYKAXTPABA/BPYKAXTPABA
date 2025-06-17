@@ -12,7 +12,7 @@
 Want to work together, commission a bot, or request Unity scripting?
 Check out my website:
 
-🔗 **[bpykaxtpaba.github.io](https://bpykaxtpaba.github.io)**
+🔗 **[bpykaxtpaba.github.io](https://bpykaxtpaba.github.io/BPYKAXTPABA/)**
 
 There you'll find:
 - ✅ What I do (Services)
