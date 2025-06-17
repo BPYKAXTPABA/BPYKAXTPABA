@@ -200,6 +200,7 @@ footer {
 @media (max-width: 600px) {
   .cards {
     grid-template-columns: 1fr;
+    padding: 0 1rem;
   }
 
   nav {
