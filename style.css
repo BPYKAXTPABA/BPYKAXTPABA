@@ -208,3 +208,35 @@ footer {
     gap: 1rem;
   }
 }
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.contact-link {
+  background-color: #1a1a1a;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  color: #eaeaea;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-weight: 500;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.05);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.contact-link:hover {
+  background-color: #2a2a2a;
+  transform: translateY(-2px);
+}
+
+.contact-link i {
+  font-size: 1.3rem;
+  color: #8faaff;
+}
